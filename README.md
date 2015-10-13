@@ -14,9 +14,9 @@
 - 注册Github账号 www.github.com
 - 下载并安装Github客户端 [https://desktop.github.com/](https://desktop.github.com/)
   - windows安装经验 http://jingyan.baidu.com/article/6b97984d9bd6ed1ca2b0bf07.html
-- 下载并安装anaconda python 
+- 下载并安装anaconda python https://www.continuum.io/downloads 注意选择2.7版本
 - 下载安装R软件 [http://cran.r-project.org/](http://cran.r-project.org/)
-- 确保R软件安装完毕后，下载安装Rstudio。 [下载链接](https://www.rstudio.com/products/rstudio/download)
+- 确保R软件安装完毕*后*，下载安装Rstudio。 [下载链接](https://www.rstudio.com/products/rstudio/download)
 - 打开Rstudio， Rstudio-->File--->R script
 - 按ctrl+s（mac为command+s）命名并保存到本地github小组文件夹当中
 - 打开[http://tryr.codeschool.com/](http://tryr.codeschool.com/)完成练习，先完成**前四节**。
