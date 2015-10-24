@@ -1,5 +1,8 @@
 # AcademyCamp2015
+
 学术基地班方法训练营：互联网数据挖掘导论
+
+https://github.com/data-science-lab/AcademyCamp2015
 
 
 ##时间：11月1日，周日
