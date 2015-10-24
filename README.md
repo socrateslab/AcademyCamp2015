@@ -60,4 +60,4 @@
 
 
 ##下午课堂作业
-tba
+- 十分钟学python http://www.stavros.io/tutorials/python/
