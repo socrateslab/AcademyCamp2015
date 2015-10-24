@@ -48,20 +48,18 @@
 
 ##上午课堂作业
 
-- 注册Github账号
 - Fork 课程代码仓库[AcademyCamp2015](https://github.com/data-science-lab/AcademyCamp2015)
 - 在客户端中点击左上方+号，Clone 到自己在github上的数据仓库
 - 在本地电脑中的AcademyCamp2015文件夹当中，增加一个新文件夹，以小组名字命名
 - 在文件夹当中创建markdown文件。
   - 关于markdown的介绍 [https://en.wikipedia.org/wiki/Markdown](https://en.wikipedia.org/wiki/Markdown)
-- 在markdown文件中介绍小组成员名单，学号，各自擅长的数据新闻技巧、软件
+- 在markdown文件中介绍小组成员名单，学号
 - 通过github客户端上传到自己的github仓库
 - 回到自己的github仓库网页，检查提交结果
 - 在自己的github仓库网页点击pull request将修改提交给data-science-lab/AcademyCamp2015
-
-- R语言基础1介绍 http://chengjun.github.io/web_data_analysis/demo1_install_softwares/
-- R语言基础2生成网络 http://chengjun.github.io/web_data_analysis/demo2_simulate_networks/
-- R语言基础3描述网络 http://chengjun.github.io/web_data_analysis/demo3_describe_the_network/
+  - R语言基础1介绍 http://chengjun.github.io/web_data_analysis/demo1_install_softwares/
+  - R语言基础2生成网络 http://chengjun.github.io/web_data_analysis/demo2_simulate_networks/
+  - R语言基础3描述网络 http://chengjun.github.io/web_data_analysis/demo3_describe_the_network/
 
 
 ##下午课堂作业
