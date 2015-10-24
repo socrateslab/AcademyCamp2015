@@ -10,7 +10,12 @@
 - 下午 《数据科学编程工具介绍》
   - 练习：Python编程工具的使用
 
-##准备工作：
+##课前准备工作：
+
+```
+请务必在课前完成以下账号注册、软件安装、R语言练习的**课前**工作。
+```
+
 - 注册Github账号 www.github.com
 - 下载并安装Github客户端 [https://desktop.github.com/](https://desktop.github.com/)
   - windows安装经验 http://jingyan.baidu.com/article/6b97984d9bd6ed1ca2b0bf07.html
