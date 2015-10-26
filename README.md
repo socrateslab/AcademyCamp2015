@@ -67,3 +67,4 @@ https://github.com/data-science-lab/AcademyCamp2015
 
 ##下午课堂作业
 - 十分钟学python http://www.stavros.io/tutorials/python/
+- Python入门 http://www.imooc.com/learn/177
