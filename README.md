@@ -69,3 +69,7 @@ https://github.com/data-science-lab/AcademyCamp2015
 - 十分钟学python http://www.stavros.io/tutorials/python/
 - Python入门 http://www.imooc.com/learn/177
 - Python进阶 http://www.imooc.com/view/317
+
+
+##推荐阅读
+- Discovering and Visualizing Patterns with Python https://dzone.com/refcardz/data-mining-discovering-and
