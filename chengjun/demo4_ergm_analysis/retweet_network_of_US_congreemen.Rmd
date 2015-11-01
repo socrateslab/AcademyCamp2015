@@ -1,0 +1,73 @@
+ERGM of U.S. congressmen's retweet networks
+========================================================
+# R script of ERGM
+# chengjun wang @cmc, 2013 Dec 17th
+# http://weblab.com.cityu.edu.hk/blog/project/workshops/
+
+
+```{r}
+
+
+#########################
+# load data
+#########################
+setwd("E:/Github/ergm")
+att = read.table("./party_info.txt", sep = ",", header = T, stringsAsFactors = F)
+mat = as.matrix(read.table("./retweet_network.txt", header=TRUE, sep = ",",
+                              row.names = 1,stringsAsFactors = F,
+                              as.is=TRUE))
+table(att$party) # democracy, independent, and republic.
+
+##########################
+# build the network object
+##########################
+#　since there is a conflict between igraph and statnet
+#  we need to detach igraph first before we call statnet
+
+detach("package:igraph", unload=TRUE)
+
+library(statnet)
+
+# Create a network object out of the edgelist
+n = network(mat, vertex.attr=NULL, vertex.attrnames=NULL, 
+            matrix.type="adjacency", directed=TRUE)
+summary(n) # see the basic info of the network.
+# network.vertex.names(n) 
+
+# Add the node attribues
+# Note that: if the sequence of vertex names are different from 
+# its sequence in the attributes, we need to match the postion
+# att$party[match(n%v%'vertex.names',att$id)]
+set.vertex.attribute(n, "party", att$party) 
+# n%v%'party'= att$party # another way to set node attributes
+
+# model plot
+plot(n, displayisolates = T, vertex.col =  "party", vertex.cex = 0.7)
+
+# set the colors
+n%v%'color'=n%v%'party'
+n%v%'color'=gsub("D","red",n%v%'color')
+n%v%'color'=gsub("R","blue",n%v%'color')
+n%v%'color'=gsub("I","yellow",n%v%'color')
+n%v%'size' = (degree(n) + 1)/5
+
+set.seed(2014)
+plot(n, displayisolates = F,  
+     vertex.col = "color", vertex.cex = 'size')
+# learn more about gplot by searching: ?gplot
+
+###############
+#   ergm
+###############
+
+m1 = ergm(n ~ edges + nodematch("party") + nodefactor("party")
+         + mutual + gwesp(fixed=T, cutoff=30), parallel=10)
+
+# this take a long time!
+
+summary(m1)
+mcmc.diagnostics(m1)
+```
+
+
+
